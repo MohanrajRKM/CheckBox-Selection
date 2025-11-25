@@ -1,12 +1,57 @@
-@import "../node_modules/@syncfusion/react-base/styles/material3.css"; 
-@import "../node_modules/@syncfusion/react-inputs/styles/material3.css"; 
-@import "../node_modules/@syncfusion/react-buttons/styles/material3.css"; 
-@import "../node_modules/@syncfusion/react-dropdowns/styles/material3.css"; 
-@import "../node_modules/@syncfusion/react-calendars/styles/material3.css"; 
-@import "../node_modules/@syncfusion/react-navigations/styles/material3.css"; 
-@import "../node_modules/@syncfusion/react-popups/styles/material3.css"; 
-@import "../node_modules/@syncfusion/react-pager/styles/material3.css"; 
-@import "../node_modules/@syncfusion/react-grid/styles/material3.css";
+@import "../node_modules/@syncfusion/react-base/styles/material.css"; 
+@import "../node_modules/@syncfusion/react-inputs/styles/material.css"; 
+@import "../node_modules/@syncfusion/react-buttons/styles/material.css"; 
+@import "../node_modules/@syncfusion/react-dropdowns/styles/material.css"; 
+@import "../node_modules/@syncfusion/react-calendars/styles/material.css"; 
+@import "../node_modules/@syncfusion/react-navigations/styles/material.css"; 
+@import "../node_modules/@syncfusion/react-popups/styles/material.css"; 
+@import "../node_modules/@syncfusion/react-pager/styles/material.css"; 
+@import "../node_modules/@syncfusion/react-grid/styles/material.css";
 
-/* @import "https://kendo.cdn.telerik.com/themes/12.0.0/material/material-main.css";
-@import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"; */
+
+:root {
+    --nav-bg: #ffffff;
+    --nav-text: #334155;
+    --nav-active: #3b82f6;
+    --nav-hover: #1f2937
+}
+
+.app-container {
+    padding: 12px
+}
+
+.navbar {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 16px;
+    align-items: center;
+    background: var(--nav-bg);
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 12px #0000000f
+}
+
+.nav-link {
+    color: var(--nav-text);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: color .2s ease,background-color .2s ease,transform .05s ease
+}
+
+.nav-link:hover {
+    color: var(--nav-hover);
+    background: #3b82f614
+}
+
+.nav-link.active {
+    color: #fff;
+    background: var(--nav-active)
+}
+
+.navbar .nav-link:active {
+    transform: translateY(1px)
+}
